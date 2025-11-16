@@ -91,7 +91,8 @@ actualizarCuenta (codigo, movimiento) {
     // Suma o resta el movimiento al saldo actual
     this.cuentas[codigo] += movimiento;
 
-}
+}´
+// 9. Eliminar cuenta
 eliminarCuenta(codigo) {
     // Si no existe la cuenta, da error
     if(!this.cuentas[codigo]) {
@@ -106,7 +107,7 @@ eliminarCuenta(codigo) {
     // Elimina la cuenta del banco
     delete this.cuentas[codigo];
 }
-
+// 10. Listar cuentas
 listarCuentas() {
  const div = document.getElementById('salida-banco');
 div.innerHTML = '<h2>' + this.nombre + '</h2>';
